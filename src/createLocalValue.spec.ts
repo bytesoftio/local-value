@@ -1,5 +1,5 @@
 import { createLocalValue } from "./createLocalValue"
-import { Value } from "@bytesoftio/use-value"
+import { Value } from "@bytesoftio/value"
 
 describe("createLocalValue", () => {
   it("creates a hook store attached to local storage", () => {

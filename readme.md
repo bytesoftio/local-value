@@ -1,8 +1,8 @@
-# @bytesoftio/use-local-value
+# @bytesoftio/local-value
 
 ## Installation
 
-`yarn add @bytesoftio/use-local-value` or `npm install @bytesoftio/use-local-value`
+`yarn add @bytesoftio/local-value` or `npm install @bytesoftio/local-value`
 
 ## Table of contents
 
@@ -11,27 +11,21 @@
 
 
 - [Description](#description)
-- [Usage](#usage)
-  - [createLocalValue](#createlocalvalue)
+- [createLocalValue](#createlocalvalue)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Description
 
-This package is built on top of `@bytesoftio/use-value` and provides integration with localStorage. For a more
-in depth guide please check out the docs of the other package.
+This library is built on top of the [@bytesoftio/value](https://github.com/bytesoftio/value) package and provides an integration with `localStorage`. For a more in depth guide please check out the docs of the other package.
 
-## Usage
+## createLocalValue
 
-Since this package is built on top of `@bytesoftio/use-value`, values produced by `createLocalValue` of this package and
-`createValue` of the other package are interchangeable. A value produced by this package can be consumed using the 
-`useValue` hook of the other package.
-
-### createLocalValue
+Since this package is built on top of [@bytesoftio/value](https://github.com/bytesoftio/value), values produced by `createLocalValue` from this package and `createValue` from the other package are interchangeable. A value produced by this package can be consumed using the `useValue` hook of the [@bytesoftio/use-value](https://github.com/bytesoftio/use-value) package.
 
 ```tsx
 import React from "react"
-import { createLocalValue } from "@bytesoftio/use-local-value"
+import { createLocalValue } from "@bytesoftio/local-value"
 import { useValue } from "@bytesoftio/use-value"
 
 const authValue = createLocalValue("authToken", "abcde")

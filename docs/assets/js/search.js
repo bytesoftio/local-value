@@ -1,3 +1,3 @@
 var typedoc = typedoc || {};
             typedoc.search = typedoc.search || {};
-            typedoc.search.data = {"kinds":{"64":"Function","65536":"Type literal","4194304":"Type alias"},"rows":[{"id":0,"kind":4194304,"name":"CreateLocalValue","url":"globals.html#createlocalvalue","classes":"tsd-kind-type-alias"},{"id":1,"kind":65536,"name":"__type","url":"globals.html#createlocalvalue.__type","classes":"tsd-kind-type-literal tsd-parent-kind-type-alias tsd-has-type-parameter","parent":"CreateLocalValue"},{"id":2,"kind":64,"name":"createLocalValue","url":"globals.html#createlocalvalue","classes":"tsd-kind-function tsd-has-type-parameter"}]};
+            typedoc.search.data = {"kinds":{"64":"Function"},"rows":[{"id":0,"kind":64,"name":"createLocalValue","url":"globals.html#createlocalvalue","classes":"tsd-kind-function tsd-has-type-parameter"}]};
