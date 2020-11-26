@@ -3,12 +3,12 @@ import { readLocalStorage, writeLocalStorage } from "@bytesoftio/helpers-local-s
 
 const cache: Record<string, ObservableValue> = {}
 
-export const createLocalValue = <TState>(storageKey: string, initialState: TState): ObservableValue<TState> => {
-  let value = cache[storageKey] as ObservableValue<TState>
+export const createLocalValue = <TValue>(storageKey: string, initialValue: TValue): ObservableValue<TValue> => {
+  let value = cache[storageKey] as ObservableValue<TValue>
 
   if ( ! value) {
-    value = createValue(readLocalStorage(storageKey, initialState) as TState)
-    value.listen((state) => writeLocalStorage(storageKey, state))
+    value = createValue(readLocalStorage(storageKey, initialValue) as TValue)
+    value.listen((newValue) => writeLocalStorage(storageKey, newValue))
     cache[storageKey] = value
   }
 
